@@ -19,12 +19,12 @@ function Header() {
     <div className='flex items-center gap-8 justify-between p-5'>
     <div className='flex items-center gap-8'>
 
-      <img src={logo} className="w-[80px] md:w-[115px] object-cover" />
+      <img src={logo} className="w-[80px] md:w-[115px] object-cover cursor-pointer" />
       {menu.map((item, index) => (
         <HeaderItem key={index} name={item.name} Icon={item.icon} />
       ))}
     </div>
-      <img src={userlogo} className='w-[40px] object-cover rounded-full'/>
+      <img src={userlogo} className='w-[40px] object-cover rounded-full cursor-pointer'/>
     </div>
   );
 }
